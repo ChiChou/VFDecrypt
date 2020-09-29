@@ -1,5 +1,5 @@
 linux: 
-	gcc -o vfdecrypt vfdecrypt.c -lcrypto
+	cc -o vfdecrypt vfdecrypt.c -lcrypto $(LDFLAGS) $(CPPFLAGS)
 install: 
 	cp ./vfdecrypt /usr/local/bin
 	ldconfig
